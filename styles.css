@@ -112,18 +112,28 @@ img {
 .btn { 
   display: inline-block; 
   padding: 12px 24px; 
-  background-color: var(--brand); 
-  color: white; 
+  background-color: linear-gradient(135deg, #0077ff, #00c6ff); 
+  color: #fff; 
   border: none; 
-  border-radius: var(--radius-sm); 
+  border-radius: 8px; 
   font-weight: 600; 
+  font-size: 1rem;
   text-decoration: none; 
-  transition: background 0.3s ease; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease; 
 }
 
 .btn:hover { 
-  background-color: var(--accent); 
+  background-color: linear-gradient(135deg, #005fcc, #00a3cc);
+  transform: translateY(-2px); 
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); 
 } 
+
+.btn:focus, .btn:active { 
+  outline: none; 
+  transform: scale(0.98); 
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); 
+}
 
 .btn.ghost { 
   background-color: transparent; 
@@ -694,6 +704,7 @@ body.dark-theme {
   text-decoration: none;
   font-weight: bold;
 }
+
 
 
 
